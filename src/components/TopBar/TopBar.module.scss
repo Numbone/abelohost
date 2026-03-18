@@ -1,0 +1,75 @@
+.topBar {
+  background-color: #1e2a3a;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 8px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactInfo {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  svg {
+    opacity: 0.8;
+  }
+}
+
+.authArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userName {
+  font-size: 0.8rem;
+}
+
+.authLink {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactInfo {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .item:nth-child(2) {
+    display: none;
+  }
+}
